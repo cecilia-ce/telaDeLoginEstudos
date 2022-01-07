@@ -1,0 +1,2 @@
+Esse projeto simula a tela de login de um site. O intuito desse projeto é praticar a validação de formulários utilizando JavaScript, praticar HTML e CSS, bem como praticar a prototipação através do Figma. 
+ 
