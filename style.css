@@ -1,0 +1,90 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-image: url("img/imagem.png");
+    background-repeat: no-repeat;
+    background-size: 50vw;
+    background-position: bottom center;
+}
+
+.main-login{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.left-login{
+    height: 20vh;
+    width: 100vw;
+}
+
+.rigth-login {
+    height: 60vh;
+    width: 100vw;
+}
+
+
+
+@media (min-width: 800px){
+
+    .main-login{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .left-login{
+        height: 100vh;
+        width: 50vw;
+    }
+    
+    .rigth-login {
+        height: 100vh;
+        width: 50vw;
+    }   
+
+
+}
+
+
+
+
+
+/*
+
+CONFIGURAÇÕES DESKTOP
+
+body{
+    background-image: url("img/imagem.png");
+    background-repeat: no-repeat;
+    background-size: 50vw;
+    background-position: left bottom;
+}
+
+.main-login{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left-login{
+    height: 100vh;
+    width: 50vw;
+}
+
+.rigth-login {
+    height: 100vh;
+    width: 50vw;
+}
+
+*/
