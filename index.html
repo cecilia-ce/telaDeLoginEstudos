@@ -6,30 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700;900&display=swap" rel="stylesheet"> 
 </head>
 <body>
     
-    <div class="main-login">
-        <div class="left-login">
-            <h1>UsePlanner</h1>
-            <p>Lorem ipsum dolor sit amet.</p> 
+    <div class="container">
+        <div class="titulo-container">
+            <h1 id="titulo">UsePlanner</h1>
+            <p id="subtitulo">Lorem ipsum dolor sit amet.</p> 
         </div>
-        <div class="rigth-login">
+        <div class="form-container">
             <div class="form-div">
-                <h1>Login</h1>
-                <p>Não tem uma conta? <a href="">Cadastre-se</a> aqui.</p>
+                <h1 id="titulo-form">Login</h1>
+                <p class="texto-form">Não tem uma conta? <a class="link-form" class="texto-form" href="">Cadastre-se</a> aqui.</p>
                 <form>
                     <div>
-                        <input type="email" id="input-email" placeholder="Endereço de e-mail" class="input" /> 
+                        <input type="email" placeholder="Endereço de e-mail" id="input-email" class="input" /> 
                     </div>
                     <div>
-                        <input type="password" id="input-senha" placeholder="Senha" class="input"/>
+                        <input type="password" placeholder="Senha" id="input-senha" class="input"/>
                     </div>
                     <div>
-                        <input type="submit" value="Entrar" class="btn"/>
+                        <input type="submit" value="Entrar" id="input-btn" class="btn"/>
                     </div>
                 </form>
-                <a>Esqueceu a senha?</a>
+                <a href="" class="link-form">Esqueceu a senha?</a>
             </div>
         </div>
     

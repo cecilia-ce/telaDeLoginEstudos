@@ -1,3 +1,10 @@
+:root{
+    --background-form: #896BFF;
+    --color-font: #231364;
+    --background-button: #FFCC33;
+    --background-button-hover: #FFD761;
+    --background-input: #CABDFF;
+}
 
 *{
     margin: 0;
@@ -9,48 +16,209 @@
 body{
     background-image: url("img/imagem.png");
     background-repeat: no-repeat;
-    background-size: 50vw;
+    background-size: 40vh;
     background-position: bottom center;
 }
 
-.main-login{
+
+/*CONTAINER PRINCIPAL*/
+.container{
     width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
     text-align: center;
+    font-family: 'roboto light', sans-serif;
+    color: #231364;
 }
 
-.left-login{
+/*ESPAÇO ONDE FICARÃO TITULO E SUBTITULO - É O LADO ESQUERDO DA TELA DESKTOP*/
+.titulo-container{
     height: 20vh;
     width: 100vw;
 }
 
-.rigth-login {
+#titulo{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-family: 'roboto black', sans-serif;
+}
+
+#subtitulo{
+    font-size: 12px;
+}
+
+/*ESPAÇO ONDE FICARÁ O FORMULÁRIO - É O LADO DIREITO DA TELA DESKTOP*/
+.form-container{
     height: 60vh;
     width: 100vw;
+    align-items: center;
+}
+
+/*FORMULÁRIO */
+.form-div{
+    background-color: var(--background-form);
+    border-radius: 30px;
+    height: 320px;
+    width: 255px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.texto-form{
+    font-size: 9px;
+    margin-bottom: 5px;
+}
+
+.link-form{
+    font-size: 9px;
+    color: white;
+}
+
+.input{
+    border-radius: 30px;
+    border: none;
+    background-color: var(--background-input);
+    margin: 10px;
+    height: 35px;
+    width: 80%;
+}
+
+.input::placeholder{
+    padding: 20px;
+    font-size: 11px;
+}
+
+.btn{
+    border-radius: 30px;
+    border: none;
+    background-color: var(--background-button);
+    margin-top: 10px;
+    margin-bottom: 5px;
+    height: 35px;
+    width: 80%;
+    font-family: 'roboto black', sans-serif;
+    color: #231364;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover{
+    background-color: var(--background-button-hover);
+}
+
+#titulo-form{
+    font-family: 'roboto black', sans-serif;
+    font-size: 25px;
+    padding-top: 30px;
+    padding-bottom: 25px;
 }
 
 
 
+/* VERSÃO DESKTOP*/
 @media (min-width: 800px){
 
-    .main-login{
+    body{
+        background-image: url("img/imagem.png");
+        background-repeat: no-repeat;
+        background-size: 45vw;
+        background-position: bottom left;
+    }
+
+    .container{
         width: 100vw;
         height: 100vh;
         display: flex;
         flex-wrap: wrap;
     }
     
-    .left-login{
+    /*ESPAÇO ONDE FICARÃO TITULO E SUBTITULO - É O LADO ESQUERDO DA TELA DESKTOP*/
+    .titulo-container{
         height: 100vh;
         width: 50vw;
     }
-    
-    .rigth-login {
+
+    #titulo{
+        margin-top: 15%;
+        margin-bottom: 10px;
+        font-family: 'roboto black', sans-serif;
+        font-size: 10vh;
+    }
+
+    #subtitulo{
+        font-size: 20px;
+    }
+
+    /*ESPAÇO ONDE FICARÁ O FORMULÁRIO - É O LADO DIREITO DA TELA DESKTOP*/
+    .form-container{
         height: 100vh;
         width: 50vw;
     }   
+
+    /*FORMULÁRIO */
+    .form-div{
+        background-color: var(--background-form);
+        border-radius: 30px;
+        height: 450px;
+        width: 350px;
+        margin-top: 15%;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+
+    .texto-form{
+        font-size: 11px;
+        margin-bottom: 10px;
+    }
+    
+    .link-form{
+    
+        font-size: 11px;
+        color: white;
+    }
+    
+    .input{
+        border-radius: 30px;
+        border: none;
+        background-color: var(--background-input);
+        margin: 10px;
+        height: 40px;
+        width: 80%;
+    }
+    
+    .input::placeholder{
+        padding: 20px;
+        font-size: 11px;
+    }
+    
+    .btn{
+        border-radius: 30px;
+        border: none;
+        background-color: var(--background-button);
+        margin-top: 10px;
+        margin-bottom: 15px;
+        height: 40px;
+        width: 80%;
+        font-family: 'roboto black', sans-serif;
+        font-size: 15px;
+        color: #231364;
+        cursor: pointer;
+    }
+
+
+    /* modificada o padding*/
+    #titulo-form{
+        font-family: 'roboto black', sans-serif;
+        font-size: 45px;
+        padding-top: 70px;
+        padding-bottom: 40px;
+    }
+    
+
+
 
 
 }
