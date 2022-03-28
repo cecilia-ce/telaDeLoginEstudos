@@ -41,11 +41,13 @@ body{
 #titulo{
     margin-top: 30px;
     margin-bottom: 10px;
-    font-family: 'roboto black', sans-serif;
+    font-family: 'roboto', sans-serif;
+    font-weight: 700;
 }
 
 #subtitulo{
     font-size: 12px;
+    font-weight: 300;
 }
 
 /*ESPAÇO ONDE FICARÁ O FORMULÁRIO - É O LADO DIREITO DA TELA DESKTOP*/
@@ -83,12 +85,9 @@ body{
     margin: 10px;
     height: 35px;
     width: 80%;
+    padding: 20px;
 }
 
-.input::placeholder{
-    padding: 20px;
-    font-size: 11px;
-}
 
 .btn{
     border-radius: 30px;
@@ -98,7 +97,8 @@ body{
     margin-bottom: 5px;
     height: 35px;
     width: 80%;
-    font-family: 'roboto black', sans-serif;
+    font-family: 'roboto', sans-serif;
+    font-weight: 700;
     color: #231364;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
@@ -181,18 +181,16 @@ body{
     }
     
     .input{
+
         border-radius: 30px;
         border: none;
         background-color: var(--background-input);
         margin: 10px;
+        padding: 20px;
         height: 40px;
-        width: 80%;
+        width: 80%;    
     }
     
-    .input::placeholder{
-        padding: 20px;
-        font-size: 11px;
-    }
     
     .btn{
         border-radius: 30px;
